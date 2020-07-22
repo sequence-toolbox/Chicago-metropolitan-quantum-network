@@ -3,7 +3,7 @@ from numpy.random import seed
 from sequence.app.random_request import RandomRequestApp
 from sequence.components.optical_channel import ClassicalChannel
 from sequence.kernel.timeline import Timeline
-from sequence.topology.node import QuantumRouter, MiddleNode
+from sequence.topology.node import QuantumRouter, BSMNode
 from sequence.topology.topology import Topology
 
 def program(config_file, SEED):
@@ -58,7 +58,7 @@ def program(config_file, SEED):
     DETECTOR_COUNT_RATE = 5e7
     DETECTOR_RESOLUTION = 100
     for name, node in network_topo.nodes.items():
-        if isinstance(node, MiddleNode):
+        if isinstance(node, BSMNode):
             node.bsm.update_detectors_params("efficiency", DETECTOR_EFFICIENCY)
             node.bsm.update_detectors_params("count_rate", DETECTOR_COUNT_RATE)
             node.bsm.update_detectors_params("time_resolution", DETECTOR_RESOLUTION)
