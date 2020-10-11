@@ -1,3 +1,5 @@
+This repository is used to reproduce simulations described in [SeQUeNCe paper](https://arxiv.org/abs/2009.12000). 
+
 # Requirements
 
 Python version >= 3.7
