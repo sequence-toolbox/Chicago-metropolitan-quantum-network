@@ -8,7 +8,7 @@ Python version >= 3.7
 
 ## SeQUeNCe
 
-Follow install intstruction in SeQUeNCe to install library
+Follow install intstruction in [SeQUeNCe](https://github.com/sequence-toolbox/SeQUeNCe) to install library
 
 ## Matplotlib
 
